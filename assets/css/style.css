@@ -1,5 +1,11 @@
+/* ========================================
+   IMPORTATION DES POLICES
+======================================== */
+
+/* Police Lato depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+/* Police Raleway normale */
 @font-face {
     font-family: "Raleway";
     src: url("../fonts/Raleway-VariableFont_wght.woff");
@@ -8,6 +14,7 @@
     font-style: normal;
 }
 
+/* Police Raleway italique */
 @font-face {
     font-family: "Raleway";
     src: url("../fonts/Raleway-Italic-VariableFont_wght.woff");
@@ -16,17 +23,27 @@
     font-style: italic;
 }
 
+
+/* ========================================
+   STYLES GÉNÉRAUX
+======================================== */
+
 body {
     background-color: #f5f5f5;
 }
 
+/* Conteneur principal centré */
 .container {
     width: 1160px;
     max-width: 100%;
     margin: auto;
 }
 
-/* HEADER */
+
+/* ========================================
+   HEADER
+======================================== */
+
 header {
     background-color: #17abb3;
     display: grid;
@@ -36,6 +53,7 @@ header {
     padding: 15px 30px;
 }
 
+/* Photo de profil */
 header img {
     width: 130px;
     height: 130px;
@@ -44,13 +62,15 @@ header img {
     border: 4px solid #ffffff;
     justify-self: center;
     margin-left: 80px;
-    cursor: zoom-in;
+    cursor: zoom-in; /* Curseur loupe au survol */
 }
 
+/* Effet hover sur la photo */
 header img:hover {
     opacity: 0.9;
 }
 
+/* Titre et formation */
 header h1,
 header .nom_formation {
     grid-column: 2;
@@ -59,6 +79,7 @@ header .nom_formation {
     color: #ffffff;
 }
 
+/* Sous-titre formation */
 header .nom_formation {
     margin-top: 6px;
     margin-bottom: 14px;
@@ -66,6 +87,7 @@ header .nom_formation {
     font-weight: 700;
 }
 
+/* Grille des coordonnées */
 header .informations {
     grid-column: 2;
     display: grid;
@@ -75,6 +97,7 @@ header .informations {
     margin: 0 auto;
 }
 
+/* Paragraphes des coordonnées */
 header .informations p {
     margin: 0;
     display: flex;
@@ -83,44 +106,53 @@ header .informations p {
     color: #ffffff;
 }
 
+/* Liens du header */
 header a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* Effet hover sur les liens */
 header a:hover {
     text-decoration: underline;
     opacity: 0.9;
 }
 
+/* Icônes du header */
 header i {
     color: #ffffff;
 }
 
+/* Conteneur des informations */
 .infos-header {
     justify-self: center;
     margin-right: -60px;
 }
 
-/* MAIN */
+
+/* ========================================
+   MAIN - CONTENU PRINCIPAL
+======================================== */
+
 main {
     display: grid;
     grid-template-columns: 1fr 800px;
 }
 
+/* Zone de contenu principale */
 .principal {
     background-color: #ffffff;
     padding: 40px;
 }
 
+/* Texte justifié avec indentation */
 .texte-justifie {
     text-align: justify;
     text-indent: 40px;
     margin: 0;
 }
 
-
-/* EFFET HOVER SUR LES ARTICLES */
+/* Effet hover sur les articles */
 .principal article {
     position: relative;
     padding: 2px;
@@ -130,6 +162,7 @@ main {
     border-left: 4px solid transparent;
 }
 
+/* Au survol : trait bleu, fond gris et dézoom */
 .principal article:hover {
     background-color: #f5f5f5;
     border-left-color: #17abb3;
@@ -137,27 +170,35 @@ main {
     transform: scale(0.98);
 }
 
-/* SIDEBAR */
+
+/* ========================================
+   SIDEBAR - BARRE LATÉRALE
+======================================== */
+
 .sidebar {
     background-color: #e3e3e3;
     padding: 40px;
 }
 
+/* Listes de la sidebar */
 .sidebar ul {
     list-style-type: square;
     padding-left: 20px;
     margin-left: 0;
 }
 
+/* Items de liste */
 .sidebar li {
     margin-bottom: 10px;
     font-weight: 300;
 }
 
+/* Couleur des puces */
 .sidebar li::marker {
     color: #17abb3;
 }
 
+/* Listes sans puces pour compétences et langues */
 #competences + ul,
 #langues + ul {
     padding-left: 0;
@@ -165,25 +206,33 @@ main {
     list-style: none;
 }
 
+/* Items de compétences */
 .competences li {
     font-weight: 600;
 }
 
+/* Étoiles de niveau à droite */
 .etoiles {
     color: #17abb3;
     float: right;
 }
 
+/* Items de langues */
 .langues li {
     display: flex;
     justify-content: space-between;
 }
 
+/* Nom de la langue en gras */
 .langues .langue {
     font-weight: 600;
 }
 
-/* FOOTER */
+
+/* ========================================
+   FOOTER
+======================================== */
+
 footer {
     background-color: #17abb3;
     padding: 20px 40px;
@@ -194,26 +243,35 @@ footer {
     gap: 10px;
 }
 
+/* Conteneur des réseaux sociaux */
 footer .social {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
+/* Paragraphes des réseaux sociaux */
 footer .social p {
     margin: 0;
 }
 
+/* Effet hover sur les liens sociaux */
 footer .social a:hover {
     opacity: 0.8;
 }
 
-/* TYPOGRAPHIE */
+
+/* ========================================
+   TYPOGRAPHIE
+======================================== */
+
+/* Police Lato pour les titres */
 h1,
 h2 {
     font-family: 'Lato', sans-serif;
 }
 
+/* Police Raleway pour le texte */
 h3,
 p,
 ul,
@@ -221,10 +279,12 @@ li {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Taille du titre principal */
 h1 {
     font-size: 35px;
 }
 
+/* Style des sous-titres de section */
 h2 {
     color: #17abb3;
     padding-bottom: 8px;
@@ -232,26 +292,31 @@ h2 {
     border-bottom: 2px solid #d9d9d9;
 }
 
+/* Titres d'articles */
 h3 {
     color: #333333;
     margin-bottom: 0;
 }
 
+/* Localisation collée au titre */
 h3 + .localisation {
     margin-top: 0;
 }
 
+/* Style des localisations */
 .localisation {
     font-family: "Raleway", sans-serif;
     font-style: italic;
 }
 
+/* Durée à droite en bleu */
 .durée {
     float: right;
     color: #17abb3;
     font-weight: 600;
 }
 
+/* Texte de mise à jour */
 .maj {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
@@ -259,6 +324,7 @@ h3 + .localisation {
     margin: 0;
 }
 
+/* Icônes des réseaux sociaux */
 .social i {
     color: #ffffff;
     font-size: 2em;
