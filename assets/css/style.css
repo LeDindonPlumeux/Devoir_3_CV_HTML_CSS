@@ -25,11 +25,19 @@
 
 
 /* ========================================
-   STYLES GÉNÉRAUX
+   RESET ET STYLES GÉNÉRAUX
 ======================================== */
+
+/* Box-sizing pour inclure padding et border dans les dimensions */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #f5f5f5;
+    margin: 0;
 }
 
 /* Conteneur principal centré */
@@ -46,10 +54,9 @@ body {
 
 header {
     background-color: #17abb3;
-    display: grid;
-    grid-template-columns: 240px 1fr;
+    display: flex;
     align-items: center;
-    column-gap: 25px;
+    gap: 25px;
     padding: 15px 30px;
 }
 
@@ -60,7 +67,6 @@ header img {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffffff;
-    justify-self: center;
     margin-left: 80px;
     cursor: zoom-in; /* Curseur loupe au survol */
 }
@@ -70,31 +76,35 @@ header img:hover {
     opacity: 0.9;
 }
 
+/* Conteneur des informations */
+.infos-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Titre et formation */
-header h1,
-header .nom_formation {
-    grid-column: 2;
+header h1 {
     text-align: center;
     margin: 0;
     color: #ffffff;
 }
 
-/* Sous-titre formation */
 header .nom_formation {
-    margin-top: 6px;
-    margin-bottom: 14px;
-    font-size: 20px;
+    text-align: center;
+    margin: 6px 0 14px 0;
+    font-size: 1.25rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 /* Grille des coordonnées */
 header .informations {
-    grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px 35px;
     max-width: 290px;
-    margin: 0 auto;
 }
 
 /* Paragraphes des coordonnées */
@@ -123,24 +133,25 @@ header i {
     color: #ffffff;
 }
 
-/* Conteneur des informations */
-.infos-header {
-    justify-self: center;
-    margin-right: -60px;
-}
-
 
 /* ========================================
    MAIN - CONTENU PRINCIPAL
 ======================================== */
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 800px;
+    display: flex;
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 360px;
+    background-color: #e3e3e3;
+    padding: 40px;
 }
 
 /* Zone de contenu principale */
 .principal {
+    flex: 1;
     background-color: #ffffff;
     padding: 40px;
 }
@@ -174,11 +185,6 @@ main {
 /* ========================================
    SIDEBAR - BARRE LATÉRALE
 ======================================== */
-
-.sidebar {
-    background-color: #e3e3e3;
-    padding: 40px;
-}
 
 /* Listes de la sidebar */
 .sidebar ul {
@@ -281,7 +287,7 @@ li {
 
 /* Taille du titre principal */
 h1 {
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 /* Style des sous-titres de section */
