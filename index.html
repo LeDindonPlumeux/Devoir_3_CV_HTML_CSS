@@ -4,46 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CV en ligne d'Enzo Rol-Rodriguez, développeur web et web mobile. Formation RNCP en cours.">
+    <meta name="author" content="Enzo Rol-Rodriguez">
+    <meta name="keywords" content="Enzo Rol-Rodriguez, développeur web, développeur web mobile, HTML, CSS, CV">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>CV Enzo Rol-Rodriguez</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Enzo Rol-Rodriguez</h1>
-            <p class="nom_formation">Développeur Web et Web Mobile</p>
+            <a href="assets/image/photo-enzo-rol-rodriguez-CV.jpg" target="_blank">
+                <img src="assets/image/photo-enzo-rol-rodriguez-CV.jpg" alt="Photo de Enzo Rol-Rodriguez">
+            </a>
 
-            <div class="informations">
-                <p>
-                    <a href="mailto:Rolrodriguez99@gmail.com">
-                        Rolrodriguez99@gmail.com
-                    </a>
-                </p>
+            <div class="infos-header">
+                <h1>Enzo Rol-Rodriguez</h1>
+                <p class="nom_formation">Développeur Web et Web Mobile</p>
 
-                <p>
-                    <a href="tel:+33600000000">06 00 00 00 00</a>
-                </p>
+                <div class="informations">
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:Rolrodriguez99@gmail.com">
+                            Mail
+                        </a>
+                    </p>
 
-                <p>
-                    <a href="https://www.google.com/maps/place/Ch%C3%A2teau+et+remparts+de+la+cit%C3%A9+de+Carcassonne/@43.2069643,2.3609733,17z/data=!4m10!1m2!2m1!1schateau+de+carcassonne!3m6!1s0x12ae2c6ae2457c45:0x20a0ffc8935c17db!8m2!3d43.2068689!4d2.3639878!15sChZjaGF0ZWF1IGRlIGNhcmNhc3Nvbm5lWhgiFmNoYXRlYXUgZGUgY2FyY2Fzc29ubmWSAQZjYXN0bGXgAQA!16s%2Fg%2F11gg_tqfz9?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D"
-                        target="_blank" rel="noopener noreferrer">
-                        Carcassonne, France
-                    </a>
-                </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+33600000000">Téléphone</a>
+                    </p>
 
-                <p>Permis B et C</p>
+                    <p>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="https://www.google.com/maps/place/Ch%C3%A2teau+et+remparts+de+la+cit%C3%A9+de+Carcassonne/@43.2069643,2.3609733,17z/data=!4m10!1m2!2m1!1schateau+de+carcassonne!3m6!1s0x12ae2c6ae2457c45:0x20a0ffc8935c17db!8m2!3d43.2068689!4d2.3639878!15sChZjaGF0ZWF1IGRlIGNhcmNhc3Nvbm5lWhgiFmNoYXRlYXUgZGUgY2FyY2Fzc29ubmWSAQZjYXN0bGXgAQA!16s%2Fg%2F11gg_tqfz9?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">
+                            Adresse
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-car"></i>
+                        Permis B / C
+                    </p>
+                </div>
             </div>
         </header>
+
 
         <main>
             <aside class="sidebar">
 
                 <section>
                     <h2 id="competences">Compétences</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                    <ul class="competences">
+                        <li>
+                            HTML
+                            <span class="etoiles">★★★☆☆</span>
+                        </li>
+                        <li>
+                            CSS
+                            <span class="etoiles">★★★☆☆</span>
+                        </li>
                     </ul>
                 </section>
 
@@ -67,7 +91,7 @@
 
                 <section>
                     <h2 id="qualites">Qualités</h2>
-                    <ul>
+                    <ul class="qualites">
                         <li>Rigueur</li>
                         <li>Persévérance</li>
                         <li>Autonomie</li>
@@ -77,7 +101,7 @@
 
                 <section>
                     <h2 id="interets">Centres d’intérêt</h2>
-                    <ul>
+                    <ul class="interets">
                         <li>Pêche</li>
                         <li>Sport</li>
                         <li>Développement web</li>
@@ -88,113 +112,139 @@
             <div class="principal">
                 <section>
                     <h2>Profil</h2>
-                    <p>
-                        J’ai entrepris une formation RNCP Développeur Web & Web Mobile, où je m'applique dans
-                        l’apprentissage du HTML, du CSS et des bonnes pratiques du
-                        web.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Formations</h2>
-                    <article>
-                        <p class="durée">
-                            <time datetime="2026">2026</time> – En cours
+                    <section>
+                        <p class="texte-justifie">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
+                            voluptatum quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque unde
+                            delenti dicta perferendis magni dolore eorum atque vitae volutas. Cum magni doloribus eius
+                            tenetur!
                         </p>
-                        <h3>RNCP Développeur Web et Web Mobile</h3>
-                        <p class="localisation">Centre Européen de Formation</p>
-
-                    </article>
-
-                    <article>
-                        <p class="durée">
-                            <time datetime="2022">2022</time>
+                        <p class="texte-justifie">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed doloribus iste cumque odio! Sed
+                            voluptatum quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque unde
+                            delenti dicta perferendis magni dolore eorum atque vitae volutas. Cum magni doloribus eius
+                            tenetur!
                         </p>
-                        <h3>CAP Conducteur Livreur de Marchandise</h3>
-                        <p class="localisation">Lycée de la ville</p>
-                    </article>
+                    </section>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2019">2019</time>
-                        </p>
-                        <h3>Diplôme national du brevet</h3>
-                        <p class="localisation">Lycée de la ville </p>
-                    </article>
-                </section>
+                    <section>
+                        <h2>Formations</h2>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2026">2026</time> – En cours
+                            </p>
+                            <h3>RNCP Développeur Web et Web Mobile</h3>
+                            <p class="localisation">Centre Européen de Formation</p>
 
-                <section>
-                    <h2>Stages</h2>
-                    <article>
-                        <p class="durée">
-                            <time datetime="2021-11">Novembre 2021</time> à
-                            <time datetime="2021-12">Décembre 2021</time>
-                        </p>
-                        <h3>Stage d'observation dans le transport</h3>
-                        <p class="localisation">Entreprise de transport</p>
-                    </article>
+                        </article>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2021-03">Mars 2021</time> à
-                            <time datetime="2021-04">Avril 2021</time>
-                        </p>
-                        <h3>Stage d'observation dans le transport</h3>
-                        <p class="localisation">Entreprise de travaux publics</p>
-                    </article>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2022">2022</time>
+                            </p>
+                            <h3>CAP Conducteur Livreur de Marchandise</h3>
+                            <p class="localisation">Lycée de la ville</p>
+                        </article>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2019-11">Mars 2019</time>
-                        </p>
-                        <h3>Stage d'observation dans les travaux publics</h3>
-                        <p class="localisation">Entreprise de travaux publics</p>
-                    </article>
-                </section>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2019">2019</time>
+                            </p>
+                            <h3>Diplôme national du brevet</h3>
+                            <p class="localisation">Lycée de la ville </p>
+                        </article>
+                    </section>
 
-                <section>
-                    <h2>Expérience professionnelle</h2>
-                    <article>
-                        <p class="durée">
-                            <time datetime="2025">2025</time>
-                        </p>
-                        <h3>Militaire</h3>
-                        <p class="localisation">14e Régiment...</p>
-                    </article>
+                    <section>
+                        <h2>Stages</h2>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2021-11">Novembre 2021</time> à
+                                <time datetime="2021-12">Décembre 2021</time>
+                            </p>
+                            <h3>Stage d'observation dans le transport</h3>
+                            <p class="localisation">Entreprise de transport</p>
+                        </article>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2023">2023</time> à
-                            <time datetime="2024">2024</time>
-                        </p>
-                        <h3>Intérimaire</h3>
-                        <p class="localisation">Diverses missions</p>
-                    </article>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2021-03">Mars 2021</time> à
+                                <time datetime="2021-04">Avril 2021</time>
+                            </p>
+                            <h3>Stage d'observation dans le transport</h3>
+                            <p class="localisation">Entreprise de travaux publics</p>
+                        </article>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2022">2022</time> à
-                            <time datetime="2024">2024</time>
-                        </p>
-                        <h3>Ouvrier agricole</h3>
-                        <p class="localisation">Exploitation agricole</p>
-                    </article>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2019-11">Mars 2019</time>
+                            </p>
+                            <h3>Stage d'observation dans les travaux publics</h3>
+                            <p class="localisation">Entreprise de travaux publics</p>
+                        </article>
+                    </section>
 
-                    <article>
-                        <p class="durée">
-                            <time datetime="2021">2021</time> à
-                            <time datetime="2025">2025</time>
-                        </p>
-                        <h3>Aidant familial</h3>
-                        <p class="localisation">Accompagnement et assistance quotidienne d’une personne dépendante</p>
-                    </article>
-                </section>
+                    <section>
+                        <h2>Expérience professionnelle</h2>
+                        <article>
+                            <p class="durée">
+                                <time datetime="2025">2025</time>
+                            </p>
+                            <h3>Militaire</h3>
+                            <p class="localisation">14e Régiment...</p>
+                        </article>
+
+                        <article>
+                            <p class="durée">
+                                <time datetime="2023">2023</time> à
+                                <time datetime="2024">2024</time>
+                            </p>
+                            <h3>Intérimaire</h3>
+                            <p class="localisation">Diverses missions</p>
+                        </article>
+
+                        <article>
+                            <p class="durée">
+                                <time datetime="2022">2022</time> à
+                                <time datetime="2024">2024</time>
+                            </p>
+                            <h3>Ouvrier agricole</h3>
+                            <p class="localisation">Exploitation agricole</p>
+                        </article>
+
+                        <article>
+                            <p class="durée">
+                                <time datetime="2021">2021</time> à
+                                <time datetime="2025">2025</time>
+                            </p>
+                            <h3>Aidant familial</h3>
+                            <p class="localisation">Accompagnement et assistance quotidienne d’une personne dépendante
+                            </p>
+                        </article>
+                    </section>
             </div>
 
 
         </main>
 
-        <footer>Temporaire</footer>
+        <footer>
+            <div class="social">
+                <p>
+                    <a href="https://www.linkedin.com/in/enzo-rol-a2b5593b1/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </p>
+                <p>
+                    <a href="https://github.com/LeDindonPlumeux" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/devoir843/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </p>
+            </div>
+            <p class="maj">
+                Mis à jour le: <time datetime="2026-02-16">16/02/2026</time>
+            </p>
+        </footer>
     </div>
 </body>
 

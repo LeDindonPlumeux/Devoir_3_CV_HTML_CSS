@@ -26,11 +26,83 @@ body {
     margin: auto;
 }
 
+/* HEADER */
 header {
     background-color: #17abb3;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+    column-gap: 25px;
+    padding: 15px 30px;
 }
 
+header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    justify-self: center;
+    margin-left: 80px;
+    cursor: zoom-in;
+}
+
+header img:hover {
+    opacity: 0.9;
+}
+
+header h1,
+header .nom_formation {
+    grid-column: 2;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+}
+
+header .nom_formation {
+    margin-top: 6px;
+    margin-bottom: 14px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header .informations {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 35px;
+    max-width: 290px;
+    margin: 0 auto;
+}
+
+header .informations p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+header i {
+    color: #ffffff;
+}
+
+.infos-header {
+    justify-self: center;
+    margin-right: -60px;
+}
+
+/* MAIN */
 main {
     display: grid;
     grid-template-columns: 1fr 800px;
@@ -41,16 +113,102 @@ main {
     padding: 40px;
 }
 
+.texte-justifie {
+    text-align: justify;
+    text-indent: 40px;
+    margin: 0;
+}
+
+
+/* EFFET HOVER SUR LES ARTICLES */
+.principal article {
+    position: relative;
+    padding: 2px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.principal article:hover {
+    background-color: #f5f5f5;
+    border-left-color: #17abb3;
+    padding-left: 16px;
+    transform: scale(0.98);
+}
+
+/* SIDEBAR */
 .sidebar {
     background-color: #e3e3e3;
-    padding: 20px;
+    padding: 40px;
 }
 
+.sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.sidebar li::marker {
+    color: #17abb3;
+}
+
+#competences + ul,
+#langues + ul {
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.competences li {
+    font-weight: 600;
+}
+
+.etoiles {
+    color: #17abb3;
+    float: right;
+}
+
+.langues li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.langues .langue {
+    font-weight: 600;
+}
+
+/* FOOTER */
 footer {
     background-color: #17abb3;
-    padding: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
+footer .social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer .social p {
+    margin: 0;
+}
+
+footer .social a:hover {
+    opacity: 0.8;
+}
+
+/* TYPOGRAPHIE */
 h1,
 h2 {
     font-family: 'Lato', sans-serif;
@@ -63,17 +221,8 @@ li {
     font-family: 'Raleway', sans-serif;
 }
 
-.localisation {
-    font-family: "Raleway", sans-serif;
-    font-style: italic;
-}
-
 h1 {
-    color: #ffffff;
-}
-
-.nom_formation {
-    color: #ffffff;
+    font-size: 35px;
 }
 
 h2 {
@@ -92,8 +241,26 @@ h3 + .localisation {
     margin-top: 0;
 }
 
+.localisation {
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+}
+
 .durée {
     float: right;
     color: #17abb3;
     font-weight: 600;
+}
+
+.maj {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-style: italic;
+    margin: 0;
+}
+
+.social i {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
 }
